@@ -143,7 +143,7 @@ while (countdown > 0) {
 ### Q3
 ```js
 var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-var new_string = “”;
+var new_string = '';
  
 for (var i = 0; i < 11; i--) {
   new_string += numsArr[i] 
@@ -152,7 +152,7 @@ console.log(new_string);
 ```
 ```js
 var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-var new_string = “”;
+var new_string = '';
  
 for (var i = 0; i < 10; i++) {
   new_string += numsArr[i] + ','; 
@@ -161,10 +161,10 @@ new-string += numsArr[i];
 console.log(new_string);
 ```
 ```js
-var new_string = “”;
+var new_string = '';
  
 for (var i = 10; i > 0; i — ) {
-  new_string += numsArr[i] + “ “; 
+  new_string += numsArr[i] + ' '; 
 }
 new_string += numsArr[i];
 console.log(new_string);
@@ -312,7 +312,7 @@ const arr = [9,8,5,6,4,3,2,1];
 })(arr);
 ```
 ```js
-var arr = [“guvi”, “geek”, “zen”, “fullstack”];
+var arr = ['guvi', 'geek', 'zen', 'fullstack'];
 var ano = function(arro) {
   for (var i = 0; i <= arro.length; i++) {
     console.log(arro[i][0].toUpperCase() + arro[i].substr(1));
