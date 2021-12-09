@@ -1,3 +1,4 @@
+### Q2
 - I will put each question in it's own code block
 ```js
 alert("I'm JavaScript!");
@@ -51,3 +52,95 @@ else
  console.log( "Success" );
 }
 ```
+```js
+let value = parseInt(prompt('How many runs you scored in this ball'));
+if (value === 4) {
+      console.log("You hit a Four");
+} else if (value === 6) {
+      console.log("You hit a Six");
+} else {
+      console.log("I couldn't figure out");
+}
+```
+```js
+let login = 'Employee';
+let message = (login == 'Employee') ? (login == 'Director') ? 'Greetings' : (login == '') ? 'No login' : 'Welcome' : '';
+console.log(message);
+```
+```js
+let message;
+if (null || 2 || undefined)
+{
+ message = "welcome boss";
+}
+else
+{
+ message = "Go away";
+}
+console.log(message);
+``` 
+```js
+let message;
+let lock = 0; //Dont change any code below this 
+if (null || lock || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+console.log(message);
+```
+```js
+let message;
+let lock = 0; // Dont change any code below this
+if (lock && " " || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+console.log(message);
+```
+```js
+let i = 3;
+while (i) {
+  console.log(i--);
+}
+```
+```js
+for(let num = 1; num < 11; num++) {
+  console.log(num);
+}
+```
+```js
+for (let num = 2; num <= 20; num += 2) {
+  console.log(num)
+}
+```
+```js
+let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {
+  console.log(`Wrapped ${gifts[i]} and added a bow!`);
+}
+```
+```js
+let countdown = 100;
+while (countdown > 0) {
+  if(countdown == 0)
+  {
+   console.log("bomb triggered");
+  }
+  countdown--;
+}
+```
+```js
+// It will print "hi" because "0" is truthy value and 0 is falsy value.
+```
+
+
+
+
