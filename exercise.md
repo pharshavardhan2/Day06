@@ -140,7 +140,139 @@ while (countdown > 0) {
 ```js
 // It will print "hi" because "0" is truthy value and 0 is falsy value.
 ```
-
-
-
-
+### Q3
+```js
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = “”;
+ 
+for (var i = 0; i < 11; i--) {
+  new_string += numsArr[i] 
+}
+console.log(new_string);
+```
+```js
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = “”;
+ 
+for (var i = 0; i < 10; i++) {
+  new_string += numsArr[i] + ','; 
+}
+new-string += numsArr[i];
+console.log(new_string);
+```
+```js
+var new_string = “”;
+ 
+for (var i = 10; i > 0; i — ) {
+  new_string += numsArr[i] + “ “; 
+}
+new_string += numsArr[i];
+console.log(new_string);
+```
+```js
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+  if(numsArr[i] %2 == 0) {
+    numsArr[i] = "even";
+  }
+}
+console.log(numsArr);
+```
+```js
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+  if(i % 2 == 0 ) {
+    numsArr[i] = "even";
+  }
+}
+console.log(numsArr);
+```
+```js
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+let sum = 0;
+for (var i = 0; i <=10; i++) {
+  sum += numsArr[i]
+}
+console.log(sum);
+```
+```js
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=0;
+for (var i = 0; i <10; i++) {
+  if(numsArr[i] % 2 == 0){
+    sum += numsArr[i];
+  }
+}
+console.log(sum);
+```
+```js
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=100;
+for (var i = 0; i <=10; i++) {
+  if(numsArr[i] % 2 == 0);{
+    sum += numsArr[i]
+  }
+  else {
+    sum -= numsArr[i]
+  }
+}
+console.log(sum);
+```
+```js
+var numsArr = [[1, 2, 3, 4, 5], [ 6, 7, 8, 9, 10, 11]];
+for (var i = 0; i < numsArr.length; i++); {
+  console.log( numsArr[i]);
+}
+```
+```js
+var numsArr = [[1, 2, 3, 4, 5], [ 6, 7, 8, 9, 10, 11]];
+var str_all = "";
+for (var i = 0; i < numsArr.length; i++) {
+  var inner_array = numsArr[i];
+  for(var j = 0 ; j < inner_array.length; j++ ) {
+    str_all += inner_array[j];
+  }
+}
+console.log(str_all);
+```
+```js
+var numsArr = [[1, 2, 3, 4, 5], [ 6, 7, 8, 9, 10, 11]];
+for (var i = 0; i < numsArr.length; i++) {
+  var inner_array = numsArr[i];
+  for(var j = 0 ; j < inner_array.length; j++ )
+    if(j % 2 == 0 ) {
+      numsArr[i][j] = "even";
+    }
+  }
+}
+console.log(numsArr);
+```
+```js
+var numsArr = [[1, 2, 3, 4, 5], [ 6, 7, 8, 9, 10, 11]];
+var str_all = "";
+for (var i = numsArr.length - 1; i >= 0; i--) {
+  var inner_array = numsArr[i];
+  for(var j = inner_array.length - 1; j >= 0 ;j-- )
+    str_all +=inner_array[j];
+  }
+}
+console.log(str_all);
+```
+```js
+var numsArr = [[1, 2, 3, 4, 5], [ 6, 7, 8, 9, 10, 11]];
+var sum_odd=0;
+var sum_even=0;
+for (var i = 0; i < numsArr.length; i++) {
+  var inner_array = numsArr[i];
+  for(var j = 0 ; j < inner_array.length;j++ ){
+    if(inner_array[i] % 2 != 0) {
+      sum_odd += inner_array[i];
+    }
+    else {
+      sum_even += inner_array[i];
+    }
+  }
+}
+console.log(sum_odd);
+console.log(sum_even);
+```
