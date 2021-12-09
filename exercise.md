@@ -145,8 +145,8 @@ while (countdown > 0) {
 var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 var new_string = '';
  
-for (var i = 0; i < 11; i--) {
-  new_string += numsArr[i] 
+for (var i = 0; i < 11; i++) {
+  new_string += numsArr[i];
 }
 console.log(new_string);
 ```
@@ -157,13 +157,13 @@ var new_string = '';
 for (var i = 0; i < 10; i++) {
   new_string += numsArr[i] + ','; 
 }
-new-string += numsArr[i];
+new_string += numsArr[i];
 console.log(new_string);
 ```
 ```js
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 var new_string = '';
- 
-for (var i = 10; i > 0; i — ) {
+for (var i = 10; i > 0; i-- ) {
   new_string += numsArr[i] + ' '; 
 }
 new_string += numsArr[i];
@@ -207,9 +207,9 @@ console.log(sum);
 ```
 ```js
 var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-var sum=100;
+var sum=0;
 for (var i = 0; i <=10; i++) {
-  if(numsArr[i] % 2 == 0);{
+  if(numsArr[i] % 2 == 0){
     sum += numsArr[i]
   }
   else {
@@ -220,8 +220,8 @@ console.log(sum);
 ```
 ```js
 var numsArr = [[1, 2, 3, 4, 5], [ 6, 7, 8, 9, 10, 11]];
-for (var i = 0; i < numsArr.length; i++); {
-  console.log( numsArr[i]);
+for (var i = 0; i < numsArr.length; i++) {
+  console.log(numsArr[i]);
 }
 ```
 ```js
@@ -239,7 +239,7 @@ console.log(str_all);
 var numsArr = [[1, 2, 3, 4, 5], [ 6, 7, 8, 9, 10, 11]];
 for (var i = 0; i < numsArr.length; i++) {
   var inner_array = numsArr[i];
-  for(var j = 0 ; j < inner_array.length; j++ )
+  for(var j = 0 ; j < inner_array.length; j++ ) {
     if(j % 2 == 0 ) {
       numsArr[i][j] = "even";
     }
@@ -248,11 +248,11 @@ for (var i = 0; i < numsArr.length; i++) {
 console.log(numsArr);
 ```
 ```js
-var numsArr = [[1, 2, 3, 4, 5], [ 6, 7, 8, 9, 10, 11]];
+var numsArr = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10, 11]];
 var str_all = "";
 for (var i = numsArr.length - 1; i >= 0; i--) {
   var inner_array = numsArr[i];
-  for(var j = inner_array.length - 1; j >= 0 ;j-- )
+  for(var j = inner_array.length - 1; j >= 0 ;j-- ) {
     str_all +=inner_array[j];
   }
 }
@@ -265,11 +265,11 @@ var sum_even=0;
 for (var i = 0; i < numsArr.length; i++) {
   var inner_array = numsArr[i];
   for(var j = 0 ; j < inner_array.length;j++ ){
-    if(inner_array[i] % 2 != 0) {
-      sum_odd += inner_array[i];
+    if(inner_array[j] % 2 != 0) {
+      sum_odd += inner_array[j];
     }
     else {
-      sum_even += inner_array[i];
+      sum_even += inner_array[j];
     }
   }
 }
@@ -295,7 +295,7 @@ function add(n) {
   let sum = 0;
   while(n > 0) {
     sum += n % 10;
-    n = n / 10;
+    n = parseInt(n / 10);
   }
   return sum;
 }
@@ -305,7 +305,7 @@ console.log(add(n));
 const arr = [9,8,5,6,4,3,2,1];
 (function(arr) {
   let sum = 0;
-  for (var i = 0; i <= arr.length; i++);{
+  for (var i = 0; i < arr.length; i++) {
     sum += arr[i];
   }
   console.log(sum);
